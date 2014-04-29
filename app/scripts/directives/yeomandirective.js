@@ -2,11 +2,9 @@
 
 angular.module('yeomanApp')
   .directive('yeomanDirective', function () {
-    return {
-      template: '<div></div>',
-      restrict: 'E',
-      link: function postLink(scope, element, attrs) {
-        element.text('this is the yeomanDirective directive');
-      }
+    return {     
+    link: function(scope, element, attrs, controller) {
+                                element[0].focus();
+                            }
     };
   });
