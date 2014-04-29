@@ -1,0 +1,28 @@
+### Yeoman ###
+node_modules/
+bower_components/
+*.log
+*.htaccess
+*.bowerrc
+*.travis.yml
+*.editorconfig
+*.jshintrc
+build/
+dist/
+
+node_modules
+dist
+.tmp
+.sass-cache
+app/bower_components
+
+
+### NetBeans ###
+nbproject
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
