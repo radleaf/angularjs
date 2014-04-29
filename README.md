@@ -2,7 +2,7 @@ angularjs
 =========
 
 AngularJS Single Page Applications
-
+by Tyler Canton
 
 New and robust applications supported by the Yeoman team:
 
