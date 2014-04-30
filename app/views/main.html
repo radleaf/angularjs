@@ -1,31 +1,36 @@
 <div class="container">
 
-  <p class="lead">
-    <img src="images/logo.png" alt="I'm Radleaf Technology"><br>
-    Building quality and robust single page applications.
-  </p>
-  <p><a yeoman-directive class="btn btn-lg btn-success" ng-href="#">Check  <span class="glyphicon glyphicon-ok"> </span></a></p>
- 
- <h2>My todos</h2>
- 
-  <!-- Todos input -->
-  <form role="form" ng-submit="addTodo()">
-    <div class="row">
-      <div class="input-group">
-        <input type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
-        <span class="input-group-btn">
-          <input type="submit" class="btn btn-primary" value="Add">
-        </span>
-      </div>
+    <p class="lead">
+        <img src="images/logo.png" alt="I'm Radleaf Technology"><br>
+        Building quality and robust single page applications.
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#">Check  <span class="glyphicon glyphicon-ok"> </span></a></p>
+
+    <h2>My todos</h2>
+    <h3>App Locations</h3>
+    <ul>
+        <li><a ng-href="#/domApi">Dom Api</a></li>
+    </ul>
+
+    <h2>{{restful}}</h2>
+    <!-- Todos input -->
+    <form role="form" ng-submit="addTodo()">
+        <div class="row">
+            <div class="input-group">
+                <input yeoman-directive type="text" ng-model="todo" placeholder="What needs to be done?" class="form-control">
+                <span  class="input-group-btn">
+                    <input  type="submit" class="btn btn-primary" value="Add">
+                </span>
+            </div>
+        </div>
+    </form> 
+    <div ui-sortable ng-model="todos">
+        <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
+            <input type="text" ng-model="todo" class="form-control">
+            <span class="input-group-btn">
+                <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
+            </span>
+        </p>
     </div>
-  </form>
-<div ui-sortable ng-model="todos">
-  <p class="input-group" ng-repeat="todo in todos" style="padding:5px 10px; cursor: move;">
-    <input type="text" ng-model="todo" class="form-control">
-    <span class="input-group-btn">
-      <button class="btn btn-danger" ng-click="removeTodo($index)" aria-label="Remove">X</button>
-    </span>
-  </p>
-</div>
-  
+
 </div>

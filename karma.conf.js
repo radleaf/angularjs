@@ -11,7 +11,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
   files: [
-  'app/bower_components/jquery/jquery.js',
+  'app/bower_components/jquery/dist/jquery.js',
   'app/bower_components/jquery-ui/ui/jquery-ui.js',
   'app/bower_components/angular/angular.js',
   'app/bower_components/angular-ui-sortable/sortable.js',
@@ -19,7 +19,6 @@ module.exports = function(config) {
   'app/bower_components/angular-local-storage/angular-local-storage.js',
   'app/scripts/*.js',
   'app/scripts/**/*.js',
-  'test/mock/**/*.js',
   'test/spec/**/*.js',
   'app/bower_components/angular-resource/angular-resource.js',
   'app/bower_components/angular-cookies/angular-cookies.js',

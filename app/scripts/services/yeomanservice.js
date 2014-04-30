@@ -1,6 +1,7 @@
 'use strict';
 
-angular.module('yeomanApp')
-  .service('Yeomanservice', function Yeomanservice() {
-    // AngularJS will instantiate a singleton by calling "new" on this function
-  });
+var services = angular.module('yeomanApp');
+
+services.factory('dataService', function($http) { 
+    return $http.get('data.json');
+});

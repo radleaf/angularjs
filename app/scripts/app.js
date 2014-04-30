@@ -16,6 +16,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
+      .when('/domApi', {
+        templateUrl: 'views/domapi.html',
+        controller: 'DomapiCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
