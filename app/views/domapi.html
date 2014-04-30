@@ -1,11 +1,41 @@
-<div ng-controller="DomapiCtrl" class="well tyler">
-    <div class="jumbotron">
-        <h1>Radleaf, Tech!</h1>
-        <p>...</p>
-        <button class="btn btn-primary" ng-click="displayAlert('Clicked!')">Click Me</button>
+<div class="col-lg-12" ng-controller="DomapiCtrl">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab">
+        <li class="active"><a href="#home" data-toggle="tab">Window Service</a></li>
+        <li><a href="#profile" data-toggle="tab">Document Service</a></li>
+        <li><a href="#messages" data-toggle="tab">Interval Service</a></li>
+        <li><a href="#settings" data-toggle="tab">Settings</a></li>
+    </ul>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="home">
+               <h2>Window Click</h2>
+            <button class="btn btn-primary" ng-click="displayAlert('Clicked!')">
+                Window Service Me
+            </button>
+        </div>
+        <div class="tab-pane fade" id="profile"> 
+            <h2>Document Service</h2>
+            <button class="btn btn-primary" ng-click="displayAlert('Clicked!')">
+                DOM Click Me
+            </button>
+        </div>
+        <div class="tab-pane fade" id="messages">
+            <h2>Interval Service</h2>
+            <strong>Angular Time: </strong> {{time}}
+        </div>
+        
     </div>
- <div class="alert alert-warning alert-dismissable">
-  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-  <strong>Angular Time</strong> {{time}}
 </div>
-</div>
+<script type="text/javascript">
+            $(document).ready(function(){
+            $('#myTab a').click(function(e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+            $('ul.nav-pills li a').click(function(e) {
+                $('ul.nav-pills li.active').removeClass('active');
+                $(this).parent('li').addClass('active');
+            });
+});
+        </script>
