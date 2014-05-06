@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('yeomanApp')
-        .controller('DomapiCtrl', function($scope, $window, $document, $interval) {
+        .controller('DomapiCtrl', function($scope, $window, $location, $interval,$anchorScroll) {
           /*  $document.find("button").on("mouseover", function(event) {
                 $window.alert(event.type);
             });*/
@@ -11,4 +11,7 @@ angular.module('yeomanApp')
             $scope.displayAlert = function(msg) {
                 $window.alert(msg);
             };
+              $scope.show = function(id) {
+                $location.hash(id);
+            }
         });

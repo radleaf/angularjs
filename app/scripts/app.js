@@ -6,7 +6,8 @@ angular
     'ngSanitize',
     'ngRoute',
     'ui.sortable',
-    'LocalStorageModule'
+    'LocalStorageModule',
+    'ngSanitize'
   ]).config(['localStorageServiceProvider', function(localStorageServiceProvider){
   localStorageServiceProvider.setPrefix('radx');
 }])
@@ -19,6 +20,14 @@ angular
       .when('/domApi', {
         templateUrl: 'views/domapi.html',
         controller: 'DomapiCtrl'
+      })
+       .when('/expressions', {
+        templateUrl: 'views/expressions.html',
+        controller: 'ExpressionsCtrl'
+      })
+      .when('/execptions', {
+        templateUrl: 'views/execptions.html',
+        controller: 'ExecptionsCtrl'
       })
       .otherwise({
         redirectTo: '/'

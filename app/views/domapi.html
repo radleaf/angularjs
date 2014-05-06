@@ -2,12 +2,12 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" id="myTab">
         <li class="active"><a href="#home" data-toggle="tab">Window Service</a></li>
-        <li><a href="#profile" data-toggle="tab">Document Service</a></li>
+        <li><a href="#profile" data-toggle="tab" ng-click="show('tabHome')">Document Service</a></li>
         <li><a href="#messages" data-toggle="tab">Interval Service</a></li>
         <li><a href="#settings" data-toggle="tab">Location Service</a></li>
     </ul>
     <!-- Tab panes -->
-    <div class="tab-content">
+    <div class="tab-content" >
         <div class="tab-pane fade in active" id="home">
                <h2>Window Click</h2>
             <button class="btn btn-primary" ng-click="displayAlert('Clicked!')">

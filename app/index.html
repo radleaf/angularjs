@@ -5,9 +5,11 @@
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>RadleafJS</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link rel="icon" href="http://radleaf.com/wp-content/themes/Radleaf/favicon.png" type="image/x-icon" />
+
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
@@ -22,9 +24,19 @@
         <div class="container">
             <div class="header">
                 <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#/domApi">DOM Services</a></li>
-                    <li><a href="#">AJAX Services</a></li>
+                    <li class="active"><a href="#/">Home</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                            Services <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#/domApi">DOM Services</a></li>
+                            <li><a href="#/execptions">Error Services</a></li>
+                            <li><a href="#/expressions">Expression Services</a></li>
+                        </ul>
+                    </li>
+
+
                 </ul>
                 <h3 class="text-muted">Angular Applications</h3>
             </div>
@@ -49,7 +61,7 @@
 
             </div>
 
-            <div class="footer">
+            <div class="footer" id="tabHome">
                 <p>&copy; Radleaf Technology 2014</p>
             </div>
 
@@ -105,8 +117,11 @@
         <script src="scripts/directives/yeomandirective.js"></script>
         <script src="scripts/services/yeomanservice.js"></script>
         <script src="scripts/controllers/domapi.js"></script>
+        <script src="scripts/services/logservice.js"></script>
+        <script src="scripts/controllers/execptions.js"></script>
+        <script src="scripts/controllers/expressions.js"></script>
         <!-- endbuild -->
-      
+
 
     </body>
 </html>
