@@ -29,6 +29,14 @@ angular
         templateUrl: 'views/execptions.html',
         controller: 'ExecptionsCtrl'
       })
+      .when('/ajax', {
+        templateUrl: 'views/ajax.html',
+        controller: 'AjaxCtrl'
+      })
+      .when('/promise', {
+        templateUrl: 'views/promise.html',
+        controller: 'PromiseCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
