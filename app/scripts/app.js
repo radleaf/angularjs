@@ -37,6 +37,10 @@ angular
         templateUrl: 'views/promise.html',
         controller: 'PromiseCtrl'
       })
+      .when('/deployd', {
+        templateUrl: 'views/deployd.html',
+        controller: 'DeploydCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
