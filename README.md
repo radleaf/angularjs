@@ -5,7 +5,7 @@ AngularJS Single Page Applications
 
 by Tyler Canton
 
-<a href="www.webahoo.net/AngularJS/">Example Website: </a>
+<a href="http://www.webahoo.net/AngularJS/">Example Website: </a>
 
 New and robust applications supported by the Yeoman team:
 
