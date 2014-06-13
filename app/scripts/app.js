@@ -1,7 +1,7 @@
 'use strict';
 
 angular
-  .module('chapter1App', [
+  .module('gruntApp', [
     'ngCookies',
     'ngResource',
     'ngSanitize',
