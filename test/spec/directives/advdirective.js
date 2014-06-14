@@ -1,9 +1,9 @@
 'use strict';
 
-describe('Directive: yeomanDirective', function () {
+describe('Directive: advDirective', function () {
 
   // load the directive's module
-  beforeEach(module('yeomanApp'));
+  beforeEach(module('gruntApp'));
 
   var element,
     scope;
@@ -13,8 +13,8 @@ describe('Directive: yeomanDirective', function () {
   }));
 
   it('should make hidden element visible', inject(function ($compile) {
-    element = angular.element('<yeoman-directive></yeoman-directive>');
+    element = angular.element('<adv-directive></adv-directive>');
     element = $compile(element)(scope);
-    expect(element.text()).toBe('this is the yeomanDirective directive');
+    expect(element.text()).toBe('this is the advDirective directive');
   }));
 });

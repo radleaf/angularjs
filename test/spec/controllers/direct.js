@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: AjaxCtrl', function () {
+describe('Controller: DirectCtrl', function () {
 
   // load the controller's module
-  beforeEach(module('yeomanApp'));
+  beforeEach(module('gruntApp'));
 
-  var AjaxCtrl,
+  var DirectCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    AjaxCtrl = $controller('AjaxCtrl', {
+    DirectCtrl = $controller('DirectCtrl', {
       $scope: scope
     });
   }));

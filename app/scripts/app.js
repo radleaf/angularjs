@@ -5,13 +5,18 @@ angular
     'ngCookies',
     'ngResource',
     'ngSanitize',
-    'ngRoute'
+    'ngRoute',
+    'ui.sortable'
   ])
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
+      })
+      .when('/direct', {
+        templateUrl: 'views/direct.html',
+        controller: 'DirectCtrl'
       })
       .otherwise({
         redirectTo: '/'
